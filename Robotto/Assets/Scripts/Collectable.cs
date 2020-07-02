@@ -31,12 +31,12 @@ public class Collectable : MonoBehaviour
         if(types==CollectableTypes.money){
             GameManager.sharedInstace.CollectObject();
         }
-        else if(types==CollectableTypes.healthPotion){
-            PlayerController.sharedInstace.CollectHealth();
-        }
-        else if(types==CollectableTypes.manaPotion){
-            PlayerController.sharedInstace.CollectMana();
-        } 
+        // else if(types==CollectableTypes.healthPotion){
+        //     PlayerController.sharedInstace.CollectHealth();
+        // }
+        // else if(types==CollectableTypes.manaPotion){
+        //     PlayerController.sharedInstace.CollectMana();
+        // } 
     }
 
     void Hide(){

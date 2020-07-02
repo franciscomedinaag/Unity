@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ViewInGame : MonoBehaviour
 {
-    public Text colleactableLabel, scoreLabel, maxScoreLabel;
+    public Text scoreLabel, maxScoreLabel;
   
     void Start()
     {
@@ -17,7 +17,7 @@ public class ViewInGame : MonoBehaviour
     {
         if(GameManager.sharedInstace.currentState == GameState.inGame){
             int currentObjects= GameManager.sharedInstace.collectedObjects;
-            this.colleactableLabel.text=currentObjects.ToString();  
+            //this.colleactableLabel.text=currentObjects.ToString();  
 
             int traveledDistance= PlayerController.sharedInstace.GetDistance();
             this.scoreLabel.text="Score:\n"+traveledDistance.ToString();       
